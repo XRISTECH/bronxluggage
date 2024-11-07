@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Student Details Upload</title>
+  </head>
+  <body>
+    <h1>Student Details Upload</h1>
+    <form action="submit-student-details.php" method="POST" enctype="multipart/form-data">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required><br>
+
+      <label for="picture">Picture:</label>
+      <input type="file" id="picture" name="picture" accept="image/*" required><br>
+
+      <label for="exam">Exam:</label>
+      <select id="exam" name="exam" required>
+        <option value="">--Select Exam--</option>
+        <option value="maths">Mathematics</option>
+        <option value="english">English Language</option>
+        <option value="science">Science</option>
+      </select><br>
+
+      <label for="qr-code">QR Code:</label>
+      <input type="file" id="qr-code" name="qr-code" accept="image/*" required><br>
+
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>

@@ -1,0 +1,196 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    background-color: #f2f2f2;
+    }
+    
+    .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    
+    
+    
+    main {
+    padding: 40px 0;
+    text-align: center;
+    }
+    
+    #hero {
+     
+      margin-top: 10px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(../img/alvaro-serrano-pFLNV4gkXsc-unsplash.jpg);
+    background-size: cover;
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 80px 0;
+    height: 400px;
+    }
+    
+    #hero h1 {
+      animation-name: fade;
+      animation-duration: 1s;
+        color: rgb(251, 163, 62);
+        margin-top: 60px;
+    font-size: 36px;
+    margin-bottom: 20px;
+    }
+    #hero p{
+      animation-name: fade;
+      animation-duration: 1s;
+    }
+    #about {
+    background-color: #fff;
+    }
+    
+    .company-name {
+    font-weight: bold;
+    }
+    
+    #why-choose {
+    background-color: #f9f9f9;
+    }
+    
+    #why-choose h3 {
+    margin-top: 40px;
+    margin-left: -50px;
+    margin-bottom: 20px;
+    }
+    
+    #why-choose li {
+    list-style-type: none;
+    }
+    
+    
+    /* Previous styles */
+    
+    .logo-container {
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+    
+    .logo-container img {
+      margin-right: 10px;
+    }
+    
+    #visitor-count {
+      position: fixed;
+      z-index: 3;
+      top: 10px;
+      right: 10px;
+      background-color: #333;
+      color: #fff;
+      padding: 5px 10px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+    
+    footer{
+    
+      background-color: rgb(21, 21, 21);
+      /* border: 4px solid green; */
+     margin-bottom: 50px;
+      padding-top: 40px;
+      padding-bottom: 10px;
+  }
+    
+
+    #holdfoot{
+      display: flex;
+      justify-content: space-evenly;
+      margin-bottom: 0;
+      
+  }
+  
+  #holdfoot ul {
+      margin-bottom: 0;
+  
+    }
+  #sign td > input{
+      background-color:  rgb(21, 21, 21);
+      color: #fff;
+  } 
+  
+  #sign td > input:focus{
+    outline: none;
+  } 
+  #sign td > #suh{
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      margin-top: 10px;
+      border-radius: 5px;
+      padding: 5px;
+      color: #000000;
+      font-size: 20;
+      background-color:  rgb(123, 122, 122);
+  } 
+  #sign p, #contact p, #acc p, #buy p, #info p{
+      color: white;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     
+  }
+  
+  #info li a, #buy li a, #acc li a, #contact li a{
+      color: white;
+      text-decoration: none;
+      font-size: small;
+      
+  }
+  #info li a:hover, #buy li a:hover, #acc li a:hover, #contact li a:hover{
+      color: rgb(188, 39, 39);
+  }
+  #info ul, #buy ul, #acc ul, #contact ul{
+      list-style-type: none;
+  }
+  
+    /* Previous styles */
+    .ticker {
+    
+      position: fixed;
+      bottom: 0px;
+      width: 100%;
+      background-color: #333;
+      color: #fff;
+      padding-top: 10px;
+      overflow: hidden;
+    }
+    
+    .ticker p {
+      white-space: nowrap;
+      animation: ticker 20s linear infinite;
+    }
+    
+    @keyframes ticker {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+    @keyframes fade{
+      0%{
+          opacity: 0;
+        transform: translateY(50px);
+      }
+    50%{
+      opacity: 0;
+      transform: translateY(50px);
+    }
+      100%{
+          opacity: 1;
+          transform: translate(0);
+      }
+  }
+    @media screen and (max-width: 700px){
+      .ticker{
+        bottom: 50px;
+      /* border: 3px solid black; */
+      }
+
+      footer{
+        margin-bottom: 90px;
+      }
+    }

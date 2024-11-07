@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Boostrap modal
+        This is a pop-up dialog box that contains information that should be displayed tp the user.
+        The boostrap modal only appears when an event has occured i.e the click of a button.
+        Therefore the modal must be attached to an already existing button in the html file
+         -->
+    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#mymodal">
+        open modal
+    </button>
+
+    <!-- The modal -->
+    <div class="modal fade" id="mymodal">
+        <div class="modal-dialog">
+            <div class="modal-content bg-dark text-light">
+                <!-- modal header -->
+                <div class="modal-header">
+                    <h4>Heading</h4>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <!-- modal body -->
+                <div class="modal-body" >
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Perspiciatis esse similique molestias beatae totam,
+                        earum alias quisquam sed numquam reiciendis natus
+                        eaque distinctio odit nemo obcaecati unde eligendi at pariatur
+                    </p>
+                </div>
+                <!-- modal footer -->
+                <div class="modal-footer">
+                    <button class="btn btn-danger" data-bs-dismiss="modal">close</button>
+                </div>
+            </div> 
+        </div>
+    </div>
+    <!-- Boostrap butons -->
+    <a href="" class="btn btn-info">click me</a>
+    <div class="btn-group">
+        <a href="" class="btn btn-info">click me</a>
+        <a href="" class="btn btn-danger">click me</a>
+        <a href="" class="btn btn-warning">click me</a>
+    </div>
+</body>
+<script src="js/bootstrap.bundle.min.js"></script>
+
+</html>

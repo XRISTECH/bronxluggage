@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./img/WhatsApp Image 2023-06-22 at 13.52.40.jpg" rel="icon">
+    <title>Login/Register</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/register.css">
+    <link rel="stylesheet" href="./fontawesome-free-6.3.0-web/css/all.min.css">
+</head>
+
+<body>
+    <div id="n1">
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html" id="home" >Home</a></li>
+                <li class="dropdown1">
+                  <a href="luggageapp.html">Luggage &#9662;</a>
+                  <div class="dropdown-content">
+                    <a href="./pages/male.html">Male</a>
+                    <a href="./pages/female.html">Female</a>
+                    <a href="./pages/kid.html">Kids</a>
+                  </div>
+                </li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+        </nav>
+        
+       </div>
+       <h1 style="position: absolute; top: 150px; left: 100px; font-size: 90px; opacity: 0.1;
+       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">BRONX<sup style="font-size: 19px; position: absolute;  ">tm</sup></h1>
+    <div class="container">
+        <div id="loginContainer" class="form-container login">
+            <div id="loginForm">
+            <h2  style="color: white; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Login</h2>
+            
+                <div id="alert">
+
+                    <p  id="err1" style=" font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"></p>
+                  </div>
+                  <div id="fine">
+
+                    <p id="suss1" style=" font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"></p>
+                  </div>
+                  
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="loginEmail" name="email" placeholder="email*" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="loginPassword" name="password" placeholder="password*">
+                </div>
+                <div class="form-group">
+                    <button type="submit"  class="btn-dark bg-gradient" style="color: gold;" onclick="login()">Login</button>
+                </div>
+                <p style="color: white; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Don't have an account? <a href="#" onclick="showRegister()">Register</a></p>
+            </div>
+        </div>
+        <div id="registerContainer" class="form-container register">
+            <h2 style="color: white; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Register</h2>
+            <div id="registerForm">
+                <div id="aler1" >
+
+                    <p  id="err"></p>
+                  </div>
+                  <div id="fine1">
+
+                    <p id="suss"></p>
+                  </div>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="regName" name="name" placeholder="name*" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="regEmail" name="email" placeholder="email*" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="regPassword" name="password" placeholder="password*" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn-dark bg-gradient" style="color: gold;" onclick="register()">Register</button>
+                </div>
+                <p style="color: white; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Already have an account? <a href="#" onclick="showLogin()">Login</a></p>
+            </div>
+        </div>
+    </div>
+    <i class="fa fa-eye" aria-hidden="true"></i>
+    <footer>
+        <div id="holdfoot">
+            <div id="info">
+               
+                <ul>
+                    <p>Information</p>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Customer Service</a></li>
+                    <li><a href="">Template Settings</a></li>
+                    <li><a href="">Search Items</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">Advanced search</a></li>
+                    <li><a href="">Orders and Returns</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+            </div>
+            <div id="buy">
+                
+                <ul>
+                    <p>Who buy from us</p>
+                    <li><a href="">Shipping & Delivery</a></li>
+                    <li><a href="">Secure Payment</a></li>
+                    <li><a href="">Support</a></li>
+                    <li><a href="">Guarantee</a></li>
+                    <li><a href="">Terms And Conditions</a></li>
+                  
+                </ul>
+            </div>
+            <div id="acc">
+                
+                <ul>
+                    <p>My account</p>
+                    <li><a href="">Sign In</a></li>
+                    <li><a href="">View Cart</a></li>
+                    <li><a href="">My Wishlist</a></li>
+                    <li><a href="">FAQ</a></li>
+                </ul>
+            </div>
+            <div id="contact">
+            
+                <ul>
+                    <p>Contacts</p> 
+                    <li><a href="">E-mail: bronxvil@org.com</a></li>
+                    <li><a href="">Telephone: +3(909) 2387-6534</a></li>
+                    <li><a href="">9am to 10pm everyday</a></li>
+                </ul>
+            </div>
+            <div id="sign">
+                <p>Sign Up for Our Newsletter</p>
+                <table>
+                    <tr>
+                        <td><input type="email" name="email" placeholder="Enter your email address" ></td>
+                    </tr>
+                    <tr>
+                        <td><input id="suh" type="button" name="submit" value="Subscribe"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>  
+          <div class="ticker">
+          <p id="ticker-content"></p>
+        </div>
+       </footer>
+</body>
+<script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+<script>
+   function showRegister() {
+            document.getElementById("loginContainer").style.display = "none";
+            document.getElementById("registerContainer").style.display = "block";
+        }
+
+        function showLogin() {
+            document.getElementById("registerContainer").style.display = "none";
+            document.getElementById("loginContainer").style.display = "block";
+        }
+
+        function register() {
+            var msg = document.getElementById('suss');
+            var msg1 = document.getElementById('err');
+            var name = document.getElementById('regName').value;
+            var email = document.getElementById('regEmail').value;
+            var password = document.getElementById('regPassword').value;
+
+            if(name == '' || email == '' || password == ''){
+                msg1.textContent = 'Please fill in all required fields';
+
+            }else{
+                msg1.style.display = 'none';
+                msg.textContent = 'Registration successful';
+                
+            }
+            
+        }
+
+        function login() {
+            var email = document.getElementById("loginEmail").value;
+            var password = document.getElementById("loginPassword").value;
+            msg = document.getElementById('err1');
+            msg1 = document.getElementById('suss1');
+            if(email == 'cornelius551@outlook.com' && password == '1234'){
+                msg1.textContent = 'Welcome';
+                window.location.href = 'luggageapp.html';
+                return false;
+            }else{
+                if(email != 'cornelius551@outlook.com' && password != '1234' ){
+                    msg.textContent = 'Invalid Credentials';
+                }
+            }
+       
+        }
+
+        function direct(){
+            window.location.href = 'luggageapp.html';
+        }
+</script>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart</title>
+  <link href="./img/WhatsApp Image 2023-06-22 at 13.52.40.jpg" rel="icon">
+  <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./fontawesome-free-6.3.0-web/css/all.min.css">
+  <link rel="stylesheet" href="./css/cart.css">
+</head>
+<body>
+    <nav id="nav">
+        <h3 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"><img src="./img/WhatsApp Image 2023-06-22 at 13.52.40.jpg" alt="bronx logo"
+            style="width: 50px; border-radius: 10px; opacity: 0.9;"><span style="color: rgb(172, 73, 73);">Bronx </span>Luggage <span class="toggle"><i class="fa-solid fa-bars"></i></span> </h3>
+            <div id="dropdown" class="dropdown" style="position: absolute;">
+                <a href="index.html">Home</a>
+                <a href="luggageapp.html">Luggage</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+               
+            </div>
+          
+    </nav>
+    
+    <header>
+
+       
+    
+        <div id="n1">
+            <nav class="navbar" style="height: 60px;">
+                <ul>
+                    <li><a href="index.html" >Home</a></li>
+                    <li class="dropdown1">
+                      <a href="luggageapp.html">Luggage &#9662;</a>
+                      <div class="dropdown-content">
+                        <a href="./pages/male.html">Male</a>
+                        <a href="./pages/female.html">Female</a>
+                        <a href="./pages/kid.html">Kids</a>
+                      </div>
+                    </li>
+                    <li><a href="about.html" >About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                  </ul>
+            </nav>
+            
+           </div>
+         
+      </header>
+      <div id="crumb">
+        <ul class="breadcrumb ">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="luggageapp.html">luggage</a></li>
+            <li class="breadcrumb-item"><a href="cart.html">cart</a></li>
+           
+        </ul>
+       
+    </div>
+  <h1 style="margin-right: 30px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Cart</h1>
+  <div id="cart-items">
+  </div>
+  <p id="total-price"></p>
+  <div id="msg" style="margin-top: 20px; width: 200px;"></div>
+  <button id="purchase-all-button" onclick="purchaseAll()">Purchase All</button>
+
+  <footer>
+    <div id="holdfoot">
+        <div id="info">
+           
+            <ul>
+                <p>Information</p>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Customer Service</a></li>
+                <li><a href="">Template Settings</a></li>
+                <li><a href="">Search Items</a></li>
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Advanced search</a></li>
+                <li><a href="">Orders and Returns</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+        </div>
+        <div id="buy">
+            
+            <ul>
+                <p>Who buy from us</p>
+                <li><a href="">Shipping & Delivery</a></li>
+                <li><a href="">Secure Payment</a></li>
+                <li><a href="">Support</a></li>
+                <li><a href="">Guarantee</a></li>
+                <li><a href="">Terms And Conditions</a></li>
+              
+            </ul>
+        </div>
+        <div id="acc">
+            
+            <ul>
+                <p>My account</p>
+                <li><a href="">Sign In</a></li>
+                <li><a href="">View Cart</a></li>
+                <li><a href="">My Wishlist</a></li>
+                <li><a href="">FAQ</a></li>
+            </ul>
+        </div>
+        <div id="contact">
+        
+            <ul>
+                <p>Contacts</p> 
+                <li><a href="">E-mail: bronxvil@org.com</a></li>
+                <li><a href="">Telephone: +3(909) 2387-6534</a></li>
+                <li><a href="">9am to 10pm everyday</a></li>
+            </ul>
+        </div>
+        <div id="sign">
+            <p>Sign Up for Our Newsletter</p>
+            <table>
+                <tr>
+                    <td><input type="email" name="email" placeholder="Enter your email address" ></td>
+                </tr>
+                <tr>
+                    <td><input id="suh" type="button" name="submit" value="Subscribe"></td>
+                </tr>
+            </table>
+        </div>
+    </div>  
+      <div class="ticker">
+      <p id="ticker-content"></p>
+    </div>
+   </footer>
+
+</body>
+<script src="./js/cart.js"></script>
+<script src="./js/script.js"></script>
+<script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+</html>

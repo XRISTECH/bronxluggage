@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product app</title>
+    <script src="angular.min.js"></script>
+</head>
+<body ng-app="productApp">
+    <div ng-controller="productController">
+        <h1>Products</h1>
+        Product price: <input type="text" ng-model="pPrice" id="pPrice"><br>
+        Discount percentage: <input type="text" ng-model="dPercentage" id="dPercentage"><br>
+        <input type="button" value="check payable amount" ng-click="calc()"><br>
+        <b>Amount payable</b>: {{amountPayable}}
+
+    </div>
+   <script>
+    var app = angular.module("productApp", []);
+    app.controller("productController",function($scope){
+        $scope.pPrice = 0;
+        $scope.dPercentage = 100 * 0.08;
+        $scope.amountPayable = "";
+        $scope.calc = function(){
+            if($scope.pPrice > 0){
+                $scope.amountPayable = $scope.pPrice - $scope.dPercentage;
+            }else{
+                $scope.amountPayable = "Invalid Input";
+            }
+        }
+    });
+   </script> 
+</body>
+</html>

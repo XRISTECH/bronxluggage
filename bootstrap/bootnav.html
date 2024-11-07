@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- boostrap 5 navbar -->
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+        <!-- logo/brand -->
+        <a href="bootnav.html" class="navbar-brand"> OUR LOGO</a>
+
+        <!-- navbar toggler/collapsible button--> 
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span> 
+        </button>
+        <!-- navigation links -->
+        <div class="collapse navbar-collapse justify-content-end" id="mynavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="" class="nav-link">Tour</a></li>
+                <li class="nav-item"><a href="" class="nav-link">Contact</a></li>
+                <!-- dropdown -->
+                <li class="nav-item dropdown"> <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
+                    <div class="dropdown-menu">
+                        <a href="" class="dropdown-item">ADSE</a>
+                        <a href="" class="dropdown-item">CCNA</a>
+                        <a href="" class="dropdown-item">HDSE</a>
+                        <a href="" class="dropdown-item">DISM</a>
+                    </div>
+                </li>
+                <li class="nav-item"> <a href="" class="nav-link">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Boostrap alerts -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <div class="alert alert-success">
+                    <strong>Success!</strong>
+                    indicates a successful action.
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <div class="alert alert-danger">
+                    <strong>Danger!</strong>
+                    indicates a harzardous action.
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <div class="alert alert-warning">
+                    <strong>warning!</strong>
+                    indicates a successful message.
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <div class="alert alert-dark">
+                    <strong>Dark!</strong>
+                    indicates an action.
+                </div>
+            </div>
+            <!-- alert links -->
+            <div class="col-md-6 col-sm-12">
+                <div class="alert alert-success">
+                    <strong>Success!</strong>
+                    <a href="" class="alert-link">see</a> this message
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <div class="alert alert-danger">
+                    <strong>Danger!</strong>
+                    <a href="" class="alert-link">see</a> this message
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <div class="alert alert-light">
+                    <strong>Light!</strong>
+                    <a href="" class="alert-link">see</a> this message
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <div class="alert alert-warning">
+                    <strong>warning!</strong>
+                    <a href="" class="alert-link">see</a> this message
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <div class="alert alert-dark">
+                    <strong>Dark!</strong>
+                    <a href="" class="alert-link">see</a> this message
+                </div>
+            </div>
+            <!-- dismissible alert -->
+            <div class="col-md-6 col-sm-12">
+                <div class="alert alert-success alert-dismissible">
+                    <button class="btn-close" data-bs-dismiss="alert"></button>
+                    <strong>Success!</strong>
+                    <a href="" class="alert-link">see</a> this message
+                </div>
+            </div>
+            <!-- animated alert -->
+            <div class="col-md-6 col-sm-12">
+                <div class="alert alert-info alert-dismissible fade show">
+                    <button class="btn-close" data-bs-dismiss="alert"></button>
+                    <strong>Info!</strong>
+                    <a href="" class="alert-link">see</a> this message
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/bootstrap.bundle.min.js"></script>
+</html>

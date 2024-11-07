@@ -1,0 +1,105 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <title>Admission</title>
+</head>
+<body>
+     <!-- Header Section -->
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">School Name</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Academics</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Admissions</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Admissions Form Section -->
+  <section id="admissions-form">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Admissions Form</h2>
+          <p>Please fill out the form below to apply for admission to School Name.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <form>
+            <div class="mb-3">
+              <label for="first-name" class="form-label">First Name</label>
+              <input type="text" class="form-control" id="first-name" name="first-name" required>
+            </div>
+            <div class="mb-3">
+              <label for="last-name" class="form-label">Last Name</label>
+              <input type="text" class="form-control" id="last-name" name="last-name" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email Address</label>
+              <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="phone" class="form-label">Phone Number</label>
+              <input type="tel" class="form-control" id="phone" name="phone" required>
+            </div>
+            <div class="mb-3">
+              <label for="grade-level" class="form-label">Grade Level</label>
+              <select class="form-select" id="grade-level" name="grade-level" required>
+                <option value="">-- Select Grade Level --</option>
+                <option value="K-1">K-1</option>
+                <option value="2-3">2-3</option>
+                <option value="4-5">4-5</option>
+                <option value="6-8">6-8</option>
+                <option value="9-12">9-12</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+        <div class="col-md-6">
+          <p>If you have any questions about the admissions process or would like to schedule a tour of our campus, please contact us at:</p>
+          <ul>
+            <li>Phone: 555-1234</li>
+            <li>Email: admissions@schoolname.edu</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Footer Section -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p>&copy; 2023 School Name. All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer> 
+</body>
+<script src="js/bootstrap.bundle.min.js"></script>
+</html>

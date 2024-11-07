@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weight app</title>
+    <script src="angular.min.js"></script>
+    <style>
+        div{
+            width: fit-content;
+        }
+        input{
+            width: 100%;
+        }
+    </style>
+</head>
+<body ng-app="weightApp">
+<h1>Weight check</h1>
+<div ng-controller="weightController">
+    First item: <input type="text" ng-model="item1" id="item1"><br>
+    Units: <input type="text" ng-model="Qty1" id="Qty1"><br><br>
+    Second item: <input type="text" ng-model="item2" id="item2"><br>
+    Units: <input type="text" ng-model="Qty2" id="Qty2">
+    <input type="button" value="Calculate" ng-click="calc()"><br>
+    <b>Weight of first item</b>: {{item1}} <br>
+    <b>No. of units of first item</b>: {{Qty1}} <br>
+    <b>Weight of second item</b>: {{item2}} <br>
+    <b>No. of units of second item</b>: {{Qty2}} <br>
+    <b>Average weight</b>: {{result}}
+</div>
+  <script>
+    var app = angular.module("weightApp", []);
+    app.controller("weightController",function($scope){
+        $scope.item1 = 0;
+        $scope.Qty1 = 0;
+        $scope.item2 = 0;
+        $scope.Qty2 = 0;
+        $scope.result = "";
+        $scope.calc = function(){
+            if( $scope.item1 > 0 &&  $scope.item2 > 0 ){
+                $scope.result = (($scope.item1 * $scope.Qty1)+($scope.item2 * $scope.Qty2))/($scope.Qty1 + $scope.Qty2);
+            }else{
+                $scope.result = "Invalid Input";
+            }
+        }
+    });
+  </script>  
+</body>
+</html>
